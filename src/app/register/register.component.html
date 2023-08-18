@@ -1,0 +1,42 @@
+<header> 
+    <div
+      class="p-5 text-center bg-image"
+      style="
+        background-image: url('https://media4.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif?cid=ecf05e473w5aic6b9kiluu0gqy0u0mg9beq5gzz64kkjzc0o&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+        height: 900px;
+      "
+    > 
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <h4 class="text-dark text-muted">Register</h4>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                        </div>
+                        <button type="button" class="btn btn-info" (click)="register()">Register</button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="/login" style="text-decoration: none;">Have an account ? <span class="text-danger">Login</span></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+    </div>
+    </header>

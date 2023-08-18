@@ -1,0 +1,76 @@
+<nav class="navbar  bg-gray-900">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" ></a>
+    <form class="d-flex">
+     <button type="button" class="btn btn-info text-white hover:bg-gray-800" (click)="register()">Logout</button>
+    </form>
+  </div>
+</nav>
+
+<div>
+  <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+    <!-- Sidebar component, swap this element with another sidebar if you like -->
+    <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6">
+      <div class="flex h-16 shrink-0 items-center text-white font-bold">
+      <h3>Astronomy World</h3>
+      
+           <!-- <img src="../../../../assets/image/pic.png" alt="Logo" width="100">-->
+       
+      </div>
+      <nav class="flex flex-1 flex-col">
+        <ul role="list" class="flex flex-1 flex-col gap-y-7">
+          <li>
+            <ul role="list" class="-mx-2 space-y-1">
+              <li>
+                <a
+                  [routerLink]="['/apod']"
+                  routerLinkActive="bg-gray-800 text-white"
+                  class="text-gray-400 hover:text-white hover:bg-gray-800 group flex items-center gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                >
+                    <fa-icon class="fa-xl" [icon]="faCalendar"></fa-icon>
+                    <span>APOD</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  [routerLink]="['/earth']"
+                  routerLinkActive="bg-gray-800 text-white"
+                  class="text-gray-400 hover:text-white hover:bg-gray-800 group flex items-center gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                >
+                <fa-icon class="fa-xl" [icon]="faEarthEurope"></fa-icon>
+                  <span>EARTH</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main class="py-10 lg:pl-72">
+    <div class="px-4 sm:px-6 lg:px-8">
+      <!--<router-outlet></router-outlet>-->
+
+      
+    </div>
+
+    <mat-tab-group>
+      <mat-tab label="Picture of the day">
+        <app-picture-of-the-day></app-picture-of-the-day>
+      </mat-tab>
+      <mat-tab label="Explore Pictures by Dates">
+        <app-picture-range></app-picture-range>
+      </mat-tab>
+      <mat-tab label="Surprise me">
+        <app-picture-random></app-picture-random>
+      </mat-tab>
+    </mat-tab-group>
+  </main>
+</div>
+
+
+<div class="w-full">
+ 
+</div>

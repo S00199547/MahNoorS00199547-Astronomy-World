@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" >Astronomy World</a>
+    <form class="d-flex">
+     <button type="button" class="btn btn-info text-white " (click)="register()">Logout</button>
+    </form>
+  </div>
+</nav>
+
+
+  <header>
+   
+           
+    <div
+      class="p-5 text-center bg-image"
+      style="
+        background-image: url('https://media4.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif?cid=ecf05e473w5aic6b9kiluu0gqy0u0mg9beq5gzz64kkjzc0o&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+        height: 900px;
+      "
+    >
+      <div class="mask">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Welcome to Astronomy World</h1>
+            <h4 class="mb-4">Check it out</h4>
+            
+                 <a
+                        [routerLink]="['/apod']"
+                        routerLinkActive="bg-gray-800 text-white"
+                        class="text-white hover:text-white hover:bg-gray-800 group flex items-center gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                      >
+                          <fa-icon class="fa-xl" [icon]="faCalendar"></fa-icon>
+                          <span>APOD</span>
+                      </a>
+                   
+                      <a
+                        [routerLink]="['/earth']"
+                        routerLinkActive="bg-gray-800 text-white"
+                        class="text-white hover:text-white hover:bg-gray-800 group flex items-center gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                      >
+                      <fa-icon class="fa-xl" [icon]="faEarthEurope"></fa-icon>
+                        <span>EARTH</span>
+                      </a>
+                    
+      
+
+              </div>
+          </div>
+          </div>
+        </div>
+    
+    
+  
+  </header>
